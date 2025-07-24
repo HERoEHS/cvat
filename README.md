@@ -7,6 +7,14 @@
   </a>
 </p>
 
+# .env (예시) 
+
+| 변수명        | 설명                        | 예시                           |
+|---------------|-----------------------------|--------------------------------|
+| `CVAT_HOST`     | CVAT가 서비스될 도메인 또는 호스트            | `cvat.lucy.ai.kr`                |
+| `CSRF_TRUSTED_ORIGINS`| CSRF 허용 도메인 목록       | `https://cvat.lucy.ai.kr`|
+| `CLIENT_PLUGINS`        | 사용할 플러그인 디렉토리 목록          | `plugins/sam2`                         |
+
 # Computer Vision Annotation Tool (CVAT)
 
 [![CI][ci-img]][ci-url]
@@ -193,6 +201,7 @@ up to 10x. Here is a list of the algorithms we support, and the platforms they c
 
 | Name                                                                                                    | Type       | Framework  | CPU | GPU |
 | ------------------------------------------------------------------------------------------------------- | ---------- | ---------- | --- | --- |
+| [Segment Anything](/serverless/pytorch/facebookresearch/sam2/nuclio/)                                   | interactor | PyTorch    | ✔️  | ✔️  |
 | [Segment Anything](/serverless/pytorch/facebookresearch/sam/nuclio/)                                    | interactor | PyTorch    | ✔️  | ✔️  |
 | [Deep Extreme Cut](/serverless/openvino/dextr/nuclio)                                                   | interactor | OpenVINO   | ✔️  |     |
 | [Faster RCNN](/serverless/openvino/omz/public/faster_rcnn_inception_resnet_v2_atrous_coco/nuclio)       | detector   | OpenVINO   | ✔️  |     |
