@@ -115,5 +115,7 @@ class ModelHandler:
                         "points": [xtl, ytl, xbr, ybr],
                         "type": "rectangle",
                     })
+                
+                print(results)
 
         return results
